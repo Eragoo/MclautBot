@@ -10,4 +10,9 @@ public class PropertiesConfigTest {
         String testStringValue = "test";
         Assert.assertEquals(testStringValue, TestProperties.testStringFiled);
     }
+
+    @Test
+    public void botPropertiesTokenLoads() {
+        Assert.assertNotNull(BotProperties.TOKEN);
+    }
 }
