@@ -7,4 +7,8 @@ public enum Commands {
         this.name = name;
     }
     private String name;
+
+    public String getName() {
+        return name;
+    }
 }
