@@ -12,7 +12,13 @@ public class PropertiesConfigTest {
     }
 
     @Test
-    public void botPropertiesTokenLoads() {
+    public void botPropertiesTokenNotNull() {
         Assert.assertNotNull(BotProperties.TOKEN);
+    }
+
+    @Test
+    public void environmentVariableLoads() {
+        String expectedVar = "test-var";
+        Assert.assertEquals(expectedVar, TestProperties.envVar);
     }
 }
